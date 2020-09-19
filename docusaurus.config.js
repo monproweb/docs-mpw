@@ -1,6 +1,6 @@
 module.exports = {
   title: "Mon Pro Web",
-  tagline: "Documentations",
+  tagline: "Documentation",
   url: "https://docs.monproweb.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
