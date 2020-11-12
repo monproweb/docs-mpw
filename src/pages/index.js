@@ -1,50 +1,48 @@
-import React from "react";
-import classnames from "classnames";
-import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Facile à Utiliser</>,
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: 'Easy to Use',
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus a été conçu dès le départ pour être facilement installé et
-        utilisé pour que votre site Web soit opérationnel rapidement.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: <>Concentrez-vous sur ce Qui Compte</>,
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    title: 'Focus on What Matters',
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus vous permet de vous concentrer sur vos documents, et nous
-        ferons les corvées. Allez-y et déplacez vos documents dans le répertoire
-        <code>docs</code>.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: <>Propulsé par React</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: 'Powered by React',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Étendez ou personnalisez la mise en page de votre site Web en
-        réutilisant React. Docusaurus peut être étendu tout en réutilisant les
-        mêmes en-tête et pied de page.
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
+function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames("col col--4", styles.feature)}>
+    <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -58,22 +56,23 @@ function Feature({ imageUrl, title, description }) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const {siteConfig = {}} = context;
   return (
-    <Layout title={`Docs`} description="La documentation de Mon Pro Web">
-      <header className={classnames("hero hero--primary", styles.heroBanner)}>
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={classnames(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
               )}
-              to={useBaseUrl("docs/")}
-            >
-              Commencer
+              to={useBaseUrl('docs/')}>
+              Get Started
             </Link>
           </div>
         </div>

@@ -1,67 +1,68 @@
 module.exports = {
-  title: "Mon Pro Web",
-  tagline: "Documentation",
-  url: "https://docs.monproweb.com",
-  baseUrl: "/",
-  favicon: "img/favicon.ico",
-  organizationName: "monproweb", // Usually your GitHub org/user name.
-  projectName: "docs-mpw", // Usually your repo name.
+  title: 'Mon Pro Web',
+  tagline: 'Documentation',
+  url: 'https://docs.monproweb.io',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  favicon: 'img/favicon.ico',
+  organizationName: 'monproweb', // Usually your GitHub org/user name.
+  projectName: 'docs-mpw', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Mon Pro Web",
+      title: 'Mon Pro Web',
       logo: {
-        alt: "Mon Pro Web Logo",
-        src: "img/logo.svg",
+        alt: 'Mon Pro Web Logo',
+        src: 'img/logo.svg',
       },
       items: [
         {
-          to: "docs/doc1",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
         },
         {
-          href: "https://github.com/monproweb/docs-mpw/",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/monproweb/docs-mpw',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Style Guide",
-              to: "docs/doc1",
+              label: 'Style Guide',
+              to: 'docs/',
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2/",
+              label: 'Second Doc',
+              to: 'docs/doc2/',
             },
           ],
         },
         {
-          title: "Communauté",
+          title: 'Communauté',
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/users/10944586/thomas-erhel",
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/users/10944586/thomas-erhel',
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/monproweb",
+              label: 'Twitter',
+              href: 'https://twitter.com/monproweb',
             },
           ],
         },
         {
-          title: "Plus",
+          title: 'Plus',
           items: [
             {
               label: "Blog",
-              href: "https://blog.monproweb.com",
+              href: "https://blog.monproweb.io",
             },
             {
               label: "GitHub",
@@ -70,20 +71,21 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Mon Pro Web, Inc. Construit avec Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: "https://github.com/monproweb/docs-mpw/edit/master/",
+          editUrl:
+            'https://github.com/monproweb/docs-mpw/edit/master/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
