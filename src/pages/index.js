@@ -8,22 +8,23 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Facile à Utiliser',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Docusaurus a été conçu dès le départ pour être facilement installé et
+        utilisé pour que votre site Web soit opérationnel rapidement.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Concentrez-vous sur ce Qui Compte',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Docusaurus vous permet de vous concentrer sur vos documents, et nous
+        ferons les corvées. Allez-y et déplacez vos documents dans le répertoire
+        <code>docs</code>.
       </>
     ),
   },
@@ -32,8 +33,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Étendez ou personnalisez la mise en page de votre site Web en
+        réutilisant React. Docusaurus peut être étendu tout en réutilisant les
+        mêmes en-tête et pied de page.
       </>
     ),
   },
@@ -72,7 +74,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Commencer
             </Link>
           </div>
         </div>
