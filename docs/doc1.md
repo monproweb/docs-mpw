@@ -68,13 +68,13 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. http://www.monproweb.io/ or <http://www.eduquetouschiens.com/> and sometimes example.com (but not on GitHub, for example).
+URLs and URLs in angle brackets will automatically get turned into links. https://www.monproweb.io/ or <https://www.eduquetouschiens.com/> and sometimes example.com (but not on GitHub, for example).
 
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org/
-[1]: http://slashdot.org/
-[link text itself]: http://www.reddit.com/
+[1]: https://slashdot.org/
+[link text itself]: https://www.reddit.com/
 
 ---
 
